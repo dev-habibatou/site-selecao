@@ -10,169 +10,491 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body>
-    <div class="container mt-5">
-        <div class="text-center mb-5">
-            <div class="d-flex align-items-center">
-                <p class="text-start text-black-50">TEAM</p>
-                <hr class="border border-warning border-1 opacity-100 w-25 mx-start mb-4 mr-4">
+<body class="bg-light">
+    <!-- navbar -->
+
+    <!-- ======= Navbar ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Selecao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white bg-warning px-4 py-1 rounded-pill fw-semibold"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white ms-2" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white ms-2" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white ms-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white ms-2" href="index.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-white ms-2" href="blog.html">Blog</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white ms-2" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                            <!-- Deep Dropdown -->
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Deep
+                                    Dropdown</a>
+                            <li class="nav-item dropdown">
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Dropdown 5</a></li> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                            </ul>
+                    </li>
+                </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link text-white ms-2" href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <div>
-                <h1 class="text-start d-flex mb-5">Our Hardworking Team</h1>
+        </div>
+    </nav>
+
+    <!-- ======= Hero Carousel ======= -->
+    <section class="bg-dark text-white text-center py-5 position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <h1 class="fw-bold display-5">Welcome to <span class="text-decoration-underline">Selecao</span>
+                        </h1>
+                        <p class="mt-3 mx-auto text-white-50" style="max-width: 650px;">
+                            Slide 1: Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                            Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                            Esse doloremque accusamus repellendus deleniti vel.
+                            Minus et tempore modi architecto.
+                        </p>
+                        <a href="#"
+                            class="btn border border-warning text-warning rounded-pill px-4 py-2 fw-medium mt-3">
+                            Read More
+                        </a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <h1 class="fw-bold display-5">Lorem Ipsum Dolor</h1>
+                        <p class="mt-3 mx-auto text-white-50" style="max-width: 650px;">
+                            Slide 2: Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                            Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                            Esse doloremque accusamus repellendus deleniti vel.
+                            Minus et tempore modi architecto.
+                        </p>
+                        <a href="#"
+                            class="btn border border-warning text-warning rounded-pill px-4 py-2 fw-medium mt-3">
+                            Discover More
+                        </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <h1 class="fw-bold display-5">Sequi ea ut et est quaerat</h1>
+                        <p class="mt-3 mx-auto text-white-50" style="max-width: 650px;">
+                            Slide 3: Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                            Occaecati alias dolorem mollitia ut. Similique ea voluptatem.
+                            Esse doloremque accusamus repellendus deleniti vel.
+                            Minus et tempore modi architecto.
+                        </p>
+                        <a href="#"
+                            class="btn border border-warning text-warning rounded-pill px-4 py-2 fw-medium mt-3">
+                            Get Started
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </div>
+    </section>
+    <!-- about -->
 
 
-
-            <section class="team">
-                <div class="row gy-5">
-                    <div class=" col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card rounded-2 shadow border-none mb-4">
-                            <img src="images/image-team-1.jpg" class="image-fluid" alt="...">
-                            <div class="social d-none d-flex justify-content-center gap-3 mt-2">
-                                <a href="#"><i class="bi bi-twitter-x ms-2 d-none"></i></a>
-                                <a href="#"><i class="bi bi-facebook icon-hover"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Walter White</h5>
-                                <p class="card-text text-muted">Chief Executive Officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card shadow mb-4 align-card-center">
-                            <img src="images/image-team-2.jpg" class="image-fluid" alt="...">
-                            <div class="social  d-flex justify-content-center gap-3 mt-2">
-                                <a href="#"><i class="bi bi-twitter-x d-none"></i></a>
-                                <a href="#"><i class="bi bi-facebook d-none"></i></a>
-                                <a href="#"><i class="bi bi-instagram d-none"></i></a>
-                                <a href="#"><i class="bi bi-linkedin d-none"></i></a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Jesse Pinkman</h5>
-                                <p class="card-text text-muted">Chief Technology Officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lgg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card shadow mb-4">
-                            <img src="images/image-team-3.jpg" class="image-fluid" alt="...">
-                            <div class="social d-none d-flex justify-content-center gap-3 mt-2">
-                                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">William Anderson</h5>
-                                <p class="card-text text-muted">CTO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card shadow mb-4">
-                            <img src="images/image-team-4.jpg" class="image-fluid" alt="...">
-                            <div class="social d-none d-flex justify-content-center gap-3 mt-2">
-                                <a href="#"><i class="bi bi-twitter-x icon-hover"></i></a>
-                                <a href="#"><i class="bi bi-facebook icon-hover"></i></a>
-                                <a href="#"><i class="bi bi-instagram icon-hover"></i></a>
-                                <a href="#"><i class="bi bi-linkedin icon-hover"></i></a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Amanda Jepson</h5>
-                                <p class="card-text text-muted">Accountant</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="blog mb-5">
-                <div class="text-center ">
-                    <div class="d-flex align-items-center mb-0">
-                        <p class="text-start text-black-50">RECENT POSTS</p>
-                        <hr class="border border-warning border-1 opacity-100 w-25 mx-start mb-4 mr-4">
-                    </div>
-                    <div>
-                        <h1 class="text-start d-flex mb-5">Recent Blog Posts</h1>
-                    </div>
-                </div>
-
-                <div class="d-flex align-items-center border-0 ">
-                    <div class="row gy-5">
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch border-0" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card shadow mb-4 roun">
-                                <img src="images/image-blog-1.jpg" alt="..."
-                                    class="post-author-img flex-shrink-0 card-img-top bg-light">
-                                <div class="card-body bg-white boxshadow-4">
-                                    <h5 class="card-title text-black-50 text-start">Politics</h5>
-                                    <a href="#" class="text-decoration-none text-dark text-hover">
-                                        <h4 class="card-text text-start">Dolorum optio tempore voluptas dignissimos</h4>
-                                    </a>
-
-                                    <br>
-                                    <div class="d-flex align-items-center ">
-                                        <img src="images/image-blog-cercle.jpg" class="rounded-circle w-25"
-                                            alt="Description de l'image">
-                                        <div class="ms-3">
-                                            <p class="card-text mb-1">Maria Doe</p>
-                                            <small class="text-muted mb-0">Jan 1, 2022</small>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                            <div class="card shadow mb-4">
-                                <img src="images/image-blog-2.jpg" class="post-author-img flex-shrink-0 card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-black-50 text-start">Sports</h5>
-                                   <a href="#" class="text-decoration-none text-dark text-hover"><h4 class="card-text text-start">Nisi magni odit consequatur autem nulla dolorem
-                                    </h4></a>
-                                    <div class="d-flex align-items-center mb-5">
-                                        <img src="images/image-blog-author-2.jpg" class="rounded-circle w-25"
-                                            alt="Description de l'image">
-                                        <div class="ms-3">
-                                            <p class="mb-1">Allisa Mayer</p>
-                                            <small class="text-muted mb-0">June 5, 2022</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                            <div class="card shadow mb-4">
-                                <img src="images/image-blog-3.jpg" class="post-author-img flex-shrink-0 card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-black-50 text-start">Entertainment</h5>
-                                    <a href="#" class="text-decoration-none text-dark hover-line"><h4 class="card-text text-start">Possimus soluta ut id suscipit ea ut in quo quia et
-                                        soluta</h4></a>
-                                    <div class="d-flex align-items-center">
-                                        <img src="images/image-blog-author-3.jpg" class="rounded-circle w-25"
-                                            alt="Description de l'image">
-                                        <div class="ms-3">
-                                            <p class="mb-1">Mark Dower</p>
-                                            <small class="text-muted mb-0">Jun 22, 2022</small>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </section>
+    <section class="container py-5">
+        <div class="mb-4">
+            <small class="text-uppercase text-secondary fw-semibold">About</small>
+            <hr class="border border-warning border-2 opacity-100 w-25 mt-0 mb-2">
+            <h2 class="fw-bold text-dark">Who We Are</h2>
         </div>
 
 
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-warning me-2"></i>Ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-warning me-2"></i>Duis aute irure dolor in
+                        reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle text-warning me-2"></i>Ullamco laboris nisi ut aliquip ex ea
+                        commodo</li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-6">
+                <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                </p>
+                <a href="#" class="btn btn-warning text-white mt-3">
+                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container py-5">
+
+
+        <style>
+            .card-click:active {
+                border-color: #ffc107 !important;
+            }
+
+            .card-click:active i {
+                color: #ffc107 !important;
+            }
+        </style>
+
+        <div class="row text-center mb-4">
+
+            <div class="col-md-3 mb-3">
+                <div class="border border-warning bg-warning text-white py-3 h-100 d-flex align-items-center">
+                    <i class="bi bi-diagram-3 fs-3 me-3"></i>
+                    <p class="mb-0 text-start">Modi sit est dela pirea nest</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="border py-3 h-100 d-flex align-items-center card-click" style="cursor: pointer;">
+                    <i class="bi bi-box fs-3 text-black me-3"></i>
+                    <p class="mb-0 text-start">Unde praesentì mara setra le</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="border py-3 h-100 d-flex align-items-center card-click" style="cursor: pointer;">
+                    <i class="bi bi-brightness-high fs-3 text-black me-3"></i>
+                    <p class="mb-0 text-start">Pariatur explica nitro dela</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="border py-3 h-100 d-flex align-items-center card-click" style="cursor: pointer;">
+                    <i class="bi bi-command fs-3 text-black me-3"></i>
+                    <p class="mb-0 text-start">Nostrum qui dile node</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <h4 class="fw-bold">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                <p class="fst-italic text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check2-all text-warning me-2"></i>Ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</li>
+                    <li class="mb-2"><i class="bi bi-check2-all text-warning me-2"></i>Duis aute irure dolor in
+                        reprehenderit in voluptate velit.</li>
+                    <li class="mb-2"><i class="bi bi-check2-all text-warning me-2"></i>Ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+                <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                </p>
+            </div>
+
+
+            <div class="col-md-6">
+                <img src="working-1.jpg" class="img-fluid rounded" alt="Work image">
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+
+                <div class="col-md-8">
+                    <h5 class="fw-bold mb-2">Call To Action</h5>
+                    <p class="mb-0">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                    <a href="#" class="btn btn-warning text-white px-4 rounded-pill fw-semibold">Call To Action</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- services -->
+    <style>
+        .card-custom {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: none;
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-container {
+            font-size: 2.5rem;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .text-content {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 85%;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-header h6 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #999;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h6::after {
+            content: "";
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            width: 40px;
+            height: 2px;
+            background-color: orange;
+            transform: translateY(-50%);
+        }
+
+        .section-header h2 {
+            font-weight: 800;
+            color: #1c1e2e;
+        }
+    </style>
+
+    <body class="bg-light py-5">
+        <div class="container">
+            <div class="section-header text-start mb-5">
+                <h6>SERVICES</h6>
+                <h2>WHAT WE DO OFFER</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-info">💵</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Nesciunt Mete</h5>
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                dolores iure perferendis tempore et consequatur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-warning">📅</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Eosle Commodi</h5>
+                            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque
+                                eum hic non ut nesciunt dolorem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-success">💬</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Ledo Markt</h5>
+                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
+                                voluptas adipisci eos earum corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-danger">🧾</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Asperiores Commodit</h5>
+                            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea
+                                fuga sit provident adipisci neque.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-purple">🌐</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Velit Doloremque</h5>
+                            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut.
+                                Sed animi at autem alias eius labore.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 card-custom">
+                        <div class="icon-container text-pink">🕒</div>
+                        <div class="text-content">
+                            <h5 class="fw-bold">Dolori Architecto</h5>
+                            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
+                                Corrupti recusandae ducimus enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+
+
+        <div class="container section-title" data-aos="fade-up">
+            <div class="d-flex align-items-center">
+                <small class="text-muted">Portfolio</small>
+                <hr class="border border-warning border-1 opacity-100 w-25 mx-start mb-2 mr-4">
+            </div>
+
+        </div>
+        <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">ALL</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">App</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Card</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="img-box">
+                                <img src="lipolèvre-1.jpg" alt="Curology" class="img-fluid">
+                                <div class="d-flex justify-content-between" para>
+                                    <div>
+                                        <h5> Produit 1</h5>
+                                        <p> Lorem ipsum dolor, sit </p>
+                                    </div>
+
+                                    <div>
+                                        <i class="bi bi-zoom-in"></i>
+                                        <i class="bi bi-link-45deg"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 img-box">
+                                <img src="tablier-6.jpg" alt="tablier" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="img-box">
+                                <img src="tascafe-2.jpg" alt="Honey Product" class="img-fluid">
+
+                            </div>
+                            <div class="mt-3 img-box">
+                                <img src="lampe-5.jpg" alt="lamps" class="img-fluid">
+                            </div>
+                            <div class="mt-3 img-box">
+                                <img src="montres-9.jpg" alt="watches" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="img-box">
+                                <img src="potager-3.jpg" alt="Plant Pot" class="img-fluid">
+                            </div>
+                            <div class="mt-3 img-box">
+                                <img src="lunette-image-4.jpg" alt="sunglasses" class="img-fluid">
+                            </div>
+                            <div class=" mt-3 img-box">
+                                <img src="photo-7.jpg" alt="appareil" class="img-fluid">
+                            </div>
+
+
+                        </div>
 
 
 
@@ -183,9 +505,730 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
-</body>
 
-</html>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                        tabindex="0">...</div>
+                </div>
+            </div>
+
+
+            <!----------------------------------------- carousell--------------------------------------------------------->
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+                     
+
+                    <!-- cartes -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="male-4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a natural lead-in to additional content. This content
+                                                is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="femmes-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a natural lead-in to additional content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="homme-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a natural lead-in to additional content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div> -->
+                <!-- </div>
+               </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="monsieurs-5.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="male-4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div> -->
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                crossorigin="anonymous"></script>
+
+        </div>
+      
+
+
+
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pricing Section - Bootstrap 5 Only</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                /* This minimal style is purely for the "Advanced" ribbon's position and rotation, 
+           as Bootstrap utilities don't directly handle complex absolute positioning with rotation.
+           If you strictly need "no style css", you'd have to omit the ribbon. */
+                .ribbon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 150px;
+                    /* Adjust width as needed */
+                    height: 150px;
+                    /* Adjust height as needed for proper diagonal */
+                    overflow: hidden;
+                }
+
+                .ribbon-content {
+                    position: absolute;
+                    top: 25px;
+                    /* Adjust to position text diagonally */
+                    right: -50px;
+                    /* Adjust to position text diagonally */
+                    transform: rotate(45deg);
+                    background-color: #fd7e14;
+                    /* Bootstrap warning color or similar orange */
+                    color: white;
+                    padding: 5px 40px;
+                    font-size: 0.875rem;
+                    text-align: center;
+                    white-space: nowrap;
+                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                    line-height: 1;
+                    /* Adjust line height to prevent extra space */
+                }
+            </style>
+        </head>
+
+        <body class="bg-light">
+
+            <section class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-12 text-start">
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="text-uppercase fw-bold text-warning mb-0 me-2">Pricing</p>
+                            <div class="border-bottom border-warning" style="width: 50px;"></div>
+                        </div>
+                        <h2 class="display-6 fw-bold mb-0 text-dark">WHAT THEY ARE SAYING ABOUT US</h2>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body d-flex flex-column py-4 px-3">
+                                <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Free</h4>
+                                <h3 class="display-5 fw-bold mb-0 text-dark">$0<span class="fs-6 fw-normal text-muted">
+                                        / month</span></h3>
+                                <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                                    <li class="mb-2">Aida dere</li>
+                                    <li class="mb-2">Nec feugiat nisl</li>
+                                    <li class="mb-2">Nulla et volutpat dola</li>
+                                    <li class="mb-2 text-decoration-line-through">Pharetra massa</li>
+                                    <li class="text-decoration-line-through">Massa ultricies mi</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-lg border-0 text-center bg-warning text-white">
+                            <div class="card-body d-flex flex-column py-4 px-3">
+                                <h4 class="card-title text-white text-uppercase fw-bold mb-3">Business</h4>
+                                <h3 class="display-5 fw-bold mb-0 text-white">$19<span
+                                        class="fs-6 fw-normal text-white-50"> / month</span></h3>
+                                <ul class="list-unstyled my-4 text-white-75 flex-grow-1">
+                                    <li class="mb-2">Aida dere</li>
+                                    <li class="mb-2">Nec feugiat nisl</li>
+                                    <li class="mb-2">Nulla et volutpat dola</li>
+                                    <li class="mb-2">Pharetra massa</li>
+                                    <li>Massa ultricies mi</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <button class="btn btn-light fw-bold px-4 py-2 text-warning">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body d-flex flex-column py-4 px-3">
+                                <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Developer</h4>
+                                <h3 class="display-5 fw-bold mb-0 text-dark">$29<span class="fs-6 fw-normal text-muted">
+                                        / month</span></h3>
+                                <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                                    <li class="mb-2">Aida dere</li>
+                                    <li class="mb-2">Nec feugiat nisl</li>
+                                    <li class="mb-2">Nulla et volutpat dola</li>
+                                    <li class="mb-2">Pharetra massa</li>
+                                    <li>Massa ultricies mi</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col position-relative">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="ribbon">
+                                <div class="ribbon-content">Advanced</div>
+                            </div>
+                            <div class="card-body d-flex flex-column py-4 px-3">
+                                <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Ultimate</h4>
+                                <h3 class="display-5 fw-bold mb-0 text-dark">$49<span class="fs-6 fw-normal text-muted">
+                                        / month</span></h3>
+                                <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                                    <li class="mb-2">Aida dere</li>
+                                    <li class="mb-2">Nec feugiat nisl</li>
+                                    <li class="mb-2">Nulla et volutpat dola</li>
+                                    <li class="mb-2">Pharetra massa</li>
+                                    <li>Massa ultricies mi</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a href="#" class="position-fixed bottom-0 end-0 p-3 text-decoration-none">
+                <button class="btn btn-warning rounded-circle shadow-sm" style="width: 50px; height: 50px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-arrow-up"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </button>
+            </a>
+            <!DOCTYPE html>
+            <html lang="fr">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>FAQ</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                    crossorigin="anonymous">
+                <style>
+                    body {
+                        background-color: #f8f9fa;
+                        /* Une couleur de fond légère si nécessaire */
+                    }
+
+                    .faq-section {
+                        padding: 40px 0;
+                        background-color: #ffffff;
+                        /* Fond blanc pour la section FAQ si désiré */
+                    }
+
+                    .faq-title {
+                        font-size: 2.5rem;
+                        /* Ajustez la taille du titre principal */
+                        color: #343a40;
+                        /* Couleur foncée pour le titre principal */
+                        font-weight: 600;
+                        /* Gras pour le titre principal */
+                        margin-bottom: 2rem;
+                        position: relative;
+                    }
+
+                    .faq-subtitle {
+                        font-size: 0.9rem;
+                        color: #6c757d;
+                        text-transform: uppercase;
+                        margin-bottom: 0.5rem;
+                        letter-spacing: 1px;
+                    }
+
+                    /* Styles pour la ligne orange sous le sous-titre */
+                    .faq-subtitle-container {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        /* Espace sous le sous-titre */
+                    }
+
+                    .faq-subtitle-container .line {
+                        height: 2px;
+                        width: 50px;
+                        /* Longueur de la ligne orange */
+                        background-color: #fd7e14;
+                        /* Couleur orange */
+                        margin-left: 10px;
+                        /* Espace entre le texte et la ligne */
+                    }
+
+                    /* Styles spécifiques pour l'accordéon */
+                    .accordion-item {
+                        margin-bottom: 10px;
+                        /* Espace entre chaque élément d'accordéon */
+                        border: none;
+                        /* Supprime les bordures par défaut de Bootstrap */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+                        /* Ombre légère pour chaque élément */
+                    }
+
+                    .accordion-button {
+                        background-color: #ffffff;
+                        /* Fond blanc pour le bouton */
+                        color: #343a40;
+                        /* Couleur du texte du bouton */
+                        font-weight: 500;
+                        /* Gras léger pour le texte du bouton */
+                        border-bottom: 1px solid #dee2e6;
+                        /* Ligne de séparation en bas du bouton */
+                        padding: 1rem 1.25rem;
+                        /* Remplissage du bouton */
+                    }
+
+                    .accordion-button:not(.collapsed) {
+                        color: #495057;
+                        /* Couleur du texte quand l'accordéon est ouvert */
+                        background-color: #e9ecef;
+                        /* Fond légèrement grisé quand l'accordéon est ouvert */
+                        box-shadow: none;
+                        /* Supprime l'ombre par défaut de Bootstrap au focus/ouverture */
+                    }
+
+                    .accordion-button::after {
+                        filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg) brightness(0.9);
+                        /* Rend la flèche plus sombre/neutre */
+                    }
+
+                    .accordion-button:not(.collapsed)::after {
+                        filter: invert(0.2) sepia(1) saturate(5) hue-rotate(175deg) brightness(0.9);
+                        /* Rend la flèche plus foncée quand ouverte */
+                    }
+
+                    .accordion-body {
+                        background-color: #f8f9fa;
+                        /* Fond léger pour le corps de l'accordéon */
+                        color: #6c757d;
+                        /* Couleur du texte du corps */
+                        padding: 1.25rem;
+                        /* Remplissage du corps */
+                    }
+                </style>
+            </head>
+
+            <body>
+
+                <div class="container mt-5 faq-section">
+                    <div class="faq-subtitle-container">
+                        <span class="faq-subtitle">FREQUENTLY ASKED QUESTIONS</span>
+                        <div class="line"></div>
+                    </div>
+                    <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How to download and register?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                                    at the coast of the Semantics, a large language ocean.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to create your paypal account?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can provide the answer to this question here.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How to link your paypal and bank account?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can provide the answer to this question here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- team -->
+
+                <div class="container mt-5">
+                    <div class="text-center mb-5">
+                        <div class="d-flex align-items-center">
+                            <p class="text-start text-black-50 mb-0">TEAM</p>
+                            <hr class="border border-warning border-1 opacity-100 w-25 mx-start mb-0 mr-4">
+                        </div>
+                        <div>
+                            <h1 class="text-start d-flex mb-5">Our Hardworking Team</h1>
+                        </div>
+
+                        <section class="team">
+                            <div class="row gy-5">
+                                <div class=" col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
+                                    data-aos-delay="200">
+                                    <div class="card rounded-2 shadow border-none mb-4">
+                                        <img src="images/image-team-1.jpg" class="image-fluid" alt="...">
+                                        <div class="social d-none d-flex justify-content-center gap-3 mt-2">
+                                            <a href="#"><i class="bi bi-twitter-x ms-2 d-none"></i></a>
+                                            <a href="#"><i class="bi bi-facebook icon-hover"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Walter White</h5>
+                                            <p class="card-text text-muted">Chief Executive Officer</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                                    <div class="card shadow mb-4 align-card-center">
+                                        <img src="images/image-team-2.jpg" class="image-fluid" alt="...">
+                                        <div class="social  d-flex justify-content-center gap-3 mt-2">
+                                            <a href="#"><i class="bi bi-twitter-x d-none"></i></a>
+                                            <a href="#"><i class="bi bi-facebook d-none"></i></a>
+                                            <a href="#"><i class="bi bi-instagram d-none"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin d-none"></i></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jesse Pinkman</h5>
+                                            <p class="card-text text-muted">Chief Technology Officer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                                    <div class="card shadow mb-4">
+                                        <img src="images/image-team-3.jpg" class="image-fluid" alt="...">
+                                        <div class="social d-none d-flex justify-content-center gap-3 mt-2">
+                                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">William Anderson</h5>
+                                            <p class="card-text text-muted">CTO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                                    <div class="card shadow mb-4">
+                                        <img src="images/image-team-4.jpg" class="image-fluid" alt="...">
+                                        <div class="social d-none d-flex justify-content-center gap-3 mt-2">
+                                            <a href="#"><i class="bi bi-twitter-x icon-hover"></i></a>
+                                            <a href="#"><i class="bi bi-facebook icon-hover"></i></a>
+                                            <a href="#"><i class="bi bi-instagram icon-hover"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin icon-hover"></i></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Amanda Jepson</h5>
+                                            <p class="card-text text-muted">Accountant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="blog mb-5">
+                            <div class="text-center ">
+                                <div class="d-flex align-items-center mb-0">
+                                    <p class="text-start text-black-50">RECENT POSTS</p>
+                                    <hr class="border border-warning border-1 opacity-100 w-25 mx-start mb-4 mr-4">
+                                </div>
+                                <div>
+                                    <h1 class="text-start d-flex mb-5">Recent Blog Posts</h1>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center border-0 ">
+                                <div class="row gy-5">
+                                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch border-0"
+                                        data-aos="fade-up" data-aos-delay="100">
+                                        <div class="card shadow mb-4 roun">
+                                            <img src="images/image-blog-1.jpg" alt="..."
+                                                class="post-author-img flex-shrink-0 card-img-top bg-light">
+                                            <div class="card-body bg-white boxshadow-4">
+                                                <h5 class="card-title text-black-50 text-start">Politics</h5>
+                                                <a href="#" class="text-decoration-none text-dark text-hover">
+                                                    <h4 class="card-text text-start">Dolorum optio tempore voluptas
+                                                        dignissimos
+                                                    </h4>
+                                                </a>
+
+                                                <br>
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="images/image-blog-cercle.jpg" class="rounded-circle w-25"
+                                                        alt="Description de l'image">
+                                                    <div class="ms-3">
+                                                        <p class="card-text mb-1">Maria Doe</p>
+                                                        <small class="text-muted mb-0">Jan 1, 2022</small>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                        <div class="card shadow mb-4">
+                                            <img src="images/image-blog-2.jpg"
+                                                class="post-author-img flex-shrink-0 card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-black-50 text-start">Sports</h5>
+                                                <a href="#" class="text-decoration-none text-dark text-hover">
+                                                    <h4 class="card-text text-start">Nisi magni odit consequatur autem
+                                                        nulla
+                                                        dolorem
+                                                    </h4>
+                                                </a>
+                                                <div class="d-flex align-items-center mb-5">
+                                                    <img src="images/image-blog-author-2.jpg"
+                                                        class="rounded-circle w-25" alt="Description de l'image">
+                                                    <div class="ms-3">
+                                                        <p class="mb-1">Allisa Mayer</p>
+                                                        <small class="text-muted mb-0">June 5, 2022</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                        <div class="card shadow mb-4">
+                                            <img src="images/image-blog-3.jpg"
+                                                class="post-author-img flex-shrink-0 card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-black-50 text-start">Entertainment</h5>
+                                                <a href="#" class="text-decoration-none text-dark hover-line">
+                                                    <h4 class="card-text text-start">Possimus soluta ut id suscipit ea
+                                                        ut in
+                                                        quo
+                                                        quia et
+                                                        soluta</h4>
+                                                </a>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/image-blog-author-3.jpg"
+                                                        class="rounded-circle w-25" alt="Description de l'image">
+                                                    <div class="ms-3">
+                                                        <p class="mb-1">Mark Dower</p>
+                                                        <small class="text-muted mb-0">Jun 22, 2022</small>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+                <!-- contact -->
+
+
+
+                <!-- CONTACT SECTION -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="d-flex align-items-center mb-4">
+                            <h6 class="mb-0 text-dark me-3">Contact</h6>
+                            <div style="flex: 1; height: 4px; background-color: orange; max-width: 150px;"></div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Infos -->
+                            <div class="col-md-4 mb-4">
+                                <div class="mb-4 d-flex">
+                                    <i class="bi bi-geo-alt-fill text-warning fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold">Address</h6>
+                                        <p>A108 Adam Street, New York, NY 535022</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <i class="bi bi-telephone-fill text-warning fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold">Call Us</h6>
+                                        <p>+1 5589 55488 55</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bi bi-envelope-fill text-warning fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold">Email Us</h6>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Formulaire -->
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Your Name">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-warning text-white px-4">Send
+                                            Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FOOTER SECTION -->
+                <footer class="bg-dark text-light pt-5 pb-4">
+                    <div class="container text-center">
+                        <h4 class="fw-bold">Selecao</h4>
+                        <p class="fst-italic">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi
+                            fuga maxime saepe commodi placeat.</p>
+                        <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+                            <a href="#" class="btn btn-warning text-white rounded-circle"><i class="bi bi-x"></i></a>
+                            <a href="#" class="btn btn-warning text-white rounded-circle"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-warning text-white rounded-circle"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="#" class="btn btn-warning text-white rounded-circle"><i
+                                    class="bi bi-skype"></i></a>
+                            <a href="#" class="btn btn-warning text-white rounded-circle"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                        <p class="mb-0">Copyright <strong>Selecao</strong> All Rights Reserved</p>
+                        <p class="small">Designed by <a href="https://bootstrapmade.com/"
+                                class="text-warning">BootstrapMade</a>
+                        </p>
+                    </div>
+                </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                    crossorigin="anonymous"></script>
+            </body>
+
+            </html>
