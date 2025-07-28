@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section - Bootstrap 5 Only</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* This minimal style is purely for the "Advanced" ribbon's position and rotation, 
+           as Bootstrap utilities don't directly handle complex absolute positioning with rotation.
+           If you strictly need "no style css", you'd have to omit the ribbon. */
+        .ribbon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px; /* Adjust width as needed */
+            height: 150px; /* Adjust height as needed for proper diagonal */
+            overflow: hidden;
+        }
+
+        .ribbon-content {
+            position: absolute;
+            top: 25px; /* Adjust to position text diagonally */
+            right: -50px; /* Adjust to position text diagonally */
+            transform: rotate(45deg);
+            background-color: #fd7e14; /* Bootstrap warning color or similar orange */
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.875rem;
+            text-align: center;
+            white-space: nowrap;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            line-height: 1; /* Adjust line height to prevent extra space */
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <section class="container py-5">
+        <div class="row mb-5">
+            <div class="col-12 text-start">
+                <div class="d-flex align-items-center mb-3">
+                    <p class="text-uppercase fw-bold text-warning mb-0 me-2">Pricing</p>
+                    <div class="border-bottom border-warning" style="width: 50px;"></div> </div>
+                <h2 class="display-6 fw-bold mb-0 text-dark">WHAT THEY ARE SAYING ABOUT US</h2>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body d-flex flex-column py-4 px-3">
+                        <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Free</h4>
+                        <h3 class="display-5 fw-bold mb-0 text-dark">$0<span class="fs-6 fw-normal text-muted"> / month</span></h3>
+                        <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                            <li class="mb-2">Aida dere</li>
+                            <li class="mb-2">Nec feugiat nisl</li>
+                            <li class="mb-2">Nulla et volutpat dola</li>
+                            <li class="mb-2 text-decoration-line-through">Pharetra massa</li>
+                            <li class="text-decoration-line-through">Massa ultricies mi</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 text-center bg-warning text-white">
+                    <div class="card-body d-flex flex-column py-4 px-3">
+                        <h4 class="card-title text-white text-uppercase fw-bold mb-3">Business</h4>
+                        <h3 class="display-5 fw-bold mb-0 text-white">$19<span class="fs-6 fw-normal text-white-50"> / month</span></h3>
+                        <ul class="list-unstyled my-4 text-white-75 flex-grow-1">
+                            <li class="mb-2">Aida dere</li>
+                            <li class="mb-2">Nec feugiat nisl</li>
+                            <li class="mb-2">Nulla et volutpat dola</li>
+                            <li class="mb-2">Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button class="btn btn-light fw-bold px-4 py-2 text-warning">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body d-flex flex-column py-4 px-3">
+                        <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Developer</h4>
+                        <h3 class="display-5 fw-bold mb-0 text-dark">$29<span class="fs-6 fw-normal text-muted"> / month</span></h3>
+                        <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                            <li class="mb-2">Aida dere</li>
+                            <li class="mb-2">Nec feugiat nisl</li>
+                            <li class="mb-2">Nulla et volutpat dola</li>
+                            <li class="mb-2">Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="ribbon">
+                        <div class="ribbon-content">Advanced</div>
+                    </div>
+                    <div class="card-body d-flex flex-column py-4 px-3">
+                        <h4 class="card-title text-muted text-uppercase fw-bold mb-3">Ultimate</h4>
+                        <h3 class="display-5 fw-bold mb-0 text-dark">$49<span class="fs-6 fw-normal text-muted"> / month</span></h3>
+                        <ul class="list-unstyled my-4 text-muted flex-grow-1">
+                            <li class="mb-2">Aida dere</li>
+                            <li class="mb-2">Nec feugiat nisl</li>
+                            <li class="mb-2">Nulla et volutpat dola</li>
+                            <li class="mb-2">Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button class="btn btn-warning fw-bold px-4 py-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="position-fixed bottom-0 end-0 p-3 text-decoration-none">
+        <button class="btn btn-warning rounded-circle shadow-sm" style="width: 50px; height: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+        </button>
+    </a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Une couleur de fond légère si nécessaire */
+    }
+    .faq-section {
+      padding: 40px 0;
+      background-color: #ffffff; /* Fond blanc pour la section FAQ si désiré */
+    }
+    .faq-title {
+      font-size: 2.5rem; /* Ajustez la taille du titre principal */
+      color: #343a40; /* Couleur foncée pour le titre principal */
+      font-weight: 600; /* Gras pour le titre principal */
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .faq-subtitle {
+      font-size: 0.9rem;
+      color: #6c757d;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    /* Styles pour la ligne orange sous le sous-titre */
+    .faq-subtitle-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; /* Espace sous le sous-titre */
+    }
+    .faq-subtitle-container .line {
+      height: 2px;
+      width: 50px; /* Longueur de la ligne orange */
+      background-color: #fd7e14; /* Couleur orange */
+      margin-left: 10px; /* Espace entre le texte et la ligne */
+    }
+
+    /* Styles spécifiques pour l'accordéon */
+    .accordion-item {
+      margin-bottom: 10px; /* Espace entre chaque élément d'accordéon */
+      border: none; /* Supprime les bordures par défaut de Bootstrap */
+      box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Ombre légère pour chaque élément */
+    }
+    .accordion-button {
+      background-color: #ffffff; /* Fond blanc pour le bouton */
+      color: #343a40; /* Couleur du texte du bouton */
+      font-weight: 500; /* Gras léger pour le texte du bouton */
+      border-bottom: 1px solid #dee2e6; /* Ligne de séparation en bas du bouton */
+      padding: 1rem 1.25rem; /* Remplissage du bouton */
+    }
+    .accordion-button:not(.collapsed) {
+      color: #495057; /* Couleur du texte quand l'accordéon est ouvert */
+      background-color: #e9ecef; /* Fond légèrement grisé quand l'accordéon est ouvert */
+      box-shadow: none; /* Supprime l'ombre par défaut de Bootstrap au focus/ouverture */
+    }
+    .accordion-button::after {
+      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg) brightness(0.9); /* Rend la flèche plus sombre/neutre */
+    }
+    .accordion-button:not(.collapsed)::after {
+       filter: invert(0.2) sepia(1) saturate(5) hue-rotate(175deg) brightness(0.9); /* Rend la flèche plus foncée quand ouverte */
+    }
+    .accordion-body {
+      background-color: #f8f9fa; /* Fond léger pour le corps de l'accordéon */
+      color: #6c757d; /* Couleur du texte du corps */
+      padding: 1.25rem; /* Remplissage du corps */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5 faq-section">
+    <div class="faq-subtitle-container">
+      <span class="faq-subtitle">FREQUENTLY ASKED QUESTIONS</span>
+      <div class="line"></div>
+    </div>
+    <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How to download and register?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How to create your paypal account?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can provide the answer to this question here.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How to link your paypal and bank account?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can provide the answer to this question here.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
