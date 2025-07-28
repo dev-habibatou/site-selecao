@@ -1,0 +1,22 @@
+.para{
+   background-color: aliceblue;
+    opacity: o.7;
+    position: absolute;
+    /* width: 100%; */
+    z-index: 1;
+}
+.img-box{
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* align-items: end; */
+    margin-bottom: 20px;
+    width: 100%;
+    
+
+}
+.img-box:hover{
+    overflow: visible;
+    display: flex;
+}
